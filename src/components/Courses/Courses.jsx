@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Course from '../Course/Course';
+
 
 const Courses = () => {
     const [courses,setCourses] = useState([])
@@ -8,11 +10,13 @@ const Courses = () => {
         .then(data => setCourses(data))
     },[])
     return (
-        <div>
-           <h1 className='text-center'>Courses : {courses.length}</h1> 
+        <div className='md:w-2/3 grid grid-cols-3 gap-6'>
 
            {
-            
+             courses.map(course => <Course 
+                key={course.id} 
+                course={course}
+                ></Course>)
            }
         </div>
     );

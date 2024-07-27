@@ -38,7 +38,7 @@
   {
     "id": 5, 
     "image": "https://i.ibb.co/4twbwX1/python.jpg",
-    "title": "Deep Learning with TensorFlow and Keras",
+    "title": "Deep Learning with TensorFlow",
     "description": "Dive into deep learning with TensorFlow and Keras to build neural networks for image recognition, natural language processing, and more.",
     "price": 899,
     "reading_time": "12 weeks",

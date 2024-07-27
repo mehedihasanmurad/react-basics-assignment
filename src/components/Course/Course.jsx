@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { FaBookOpen,FaDollarSign } from "react-icons/fa";
 
 const Course = ({course}) => {
     // console.log(course);
@@ -16,8 +17,10 @@ const Course = ({course}) => {
                 <p className='h-20 w-80 text-slate-500 mb-4'>{description}</p>
             
     
-                <span>Price : {price}</span>
-                <span className='ml-4'>Credit : {read_time}hr</span>
+                <div className='flex justify-between'>
+                    <p className='text-slate-500 text-xl flex items-center '><FaDollarSign className='mr-4'></FaDollarSign> Price : {price}</p>
+                    <p className='text-slate-500 text-xl flex items-center'><FaBookOpen className='mr-4'></FaBookOpen> Credit : {read_time}hr</p>
+                </div>
             
             <button className='bg-blue-400 w-full p-3 mt-7 rounded-lg mt-2 font-bold text-white text-2xl'>Select</button>
             </div>

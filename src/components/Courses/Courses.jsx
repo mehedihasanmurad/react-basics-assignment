@@ -10,7 +10,7 @@ const Courses = () => {
         .then(data => setCourses(data))
     },[])
     return (
-        <div className='md:w-4/5 grid grid-cols-3 gap-2'>
+        <div className='md:w-4/5 md:grid grid-cols-3 gap-2'>
 
            {
              courses.map(course => <Course 

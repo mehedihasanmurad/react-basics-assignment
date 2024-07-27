@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bookmarks = () => {
     return (
-        <div className='md:w-1/3'>
+        <div className='md:w-1/5'>
             <h1>Bookmarks</h1>
         </div>
     );

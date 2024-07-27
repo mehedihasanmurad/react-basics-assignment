@@ -9,7 +9,7 @@ function App() {
 
     
     <>
-      <h1 className='text-4xl text-center'>Courses Registration</h1>
+      <h1 className='text-4xl text-center mt-12'>Courses Registration</h1>
 
       <div className='md:flex max-w-7xl mx-auto'>
         

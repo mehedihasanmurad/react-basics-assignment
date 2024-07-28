@@ -6,13 +6,17 @@ import Courses from './components/Courses/Courses'
 function App() {
 
   const [bookmarks,setBookmarks] = useState([])
+  const [totalCredit,setTotalCredit] = useState(0);
 
-
-  const addHandleSelect = course => {
+  const addHandleSelect = (course,hour) => {
     // console.log("Click the button",course);
     const newAddBookmarks = [...bookmarks,course];
     setBookmarks(newAddBookmarks);
+
+    const newTotalHour = (totalCredit + hour);
+      setTotalCredit(newTotalHour)
   }
+
   return (
 
     
@@ -23,7 +27,7 @@ function App() {
         
         <Courses addHandleSelect={addHandleSelect}></Courses>
 
-      <Bookmarks bookmarks={bookmarks}></Bookmarks>
+      <Bookmarks bookmarks={bookmarks} totalCredit={totalCredit}></Bookmarks>
       
       </div>
     </>

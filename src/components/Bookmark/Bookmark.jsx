@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bookmark = ({bookmark}) => {
     // console.log(bookmark);
-    const {title,read_time,price}= bookmark;
+    const {title}= bookmark;
     return (
         <>
             <div>

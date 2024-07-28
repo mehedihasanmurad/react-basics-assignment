@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
 
+
 const Courses = ({addHandleSelect}) => {
     const [courses,setCourses] = useState([])
     useEffect(() =>{

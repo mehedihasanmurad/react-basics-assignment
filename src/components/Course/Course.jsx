@@ -3,6 +3,7 @@
 import React from 'react';
 import { FaBookOpen,FaDollarSign } from "react-icons/fa";
 
+
 const Course = ({course,addHandleSelect}) => {
     // console.log(course);
     const {image,title,description,price,read_time} = course;
@@ -22,7 +23,7 @@ const Course = ({course,addHandleSelect}) => {
                     <p className='text-slate-500 flex items-center mt-2'><FaBookOpen className='mr-4'></FaBookOpen> Credit : {read_time}hr</p>
                 </div>
             
-            <button onClick={() => addHandleSelect(course,read_time)} className='bg-blue-400 w-full p-3 mt-7 rounded-lg mt-2 font-bold text-white text-2xl'>Select</button>
+            <button onClick={() => addHandleSelect(course,read_time,price)}  className='bg-blue-400 w-full p-3 mt-7 rounded-lg mt-2 font-bold text-white text-2xl'>Select</button>
             </div>
         </div>
     );

@@ -5,6 +5,9 @@ import Courses from './components/Courses/Courses'
 function App() {
 
 
+  const addHandleSelect = course => {
+    console.log("Click the button");
+  }
   return (
 
     
@@ -13,7 +16,7 @@ function App() {
 
       <div className='md:flex max-w-7xl mx-auto'>
         
-        <Courses></Courses>
+        <Courses addHandleSelect={addHandleSelect}></Courses>
 
       <Bookmarks></Bookmarks>
       

@@ -38,7 +38,7 @@
   {
     "id": 5, 
     "image": "https://i.ibb.co/4twbwX1/python.jpg",
-    "title": "Deep Learning TensorFlow",
+    "title": "Deep Learning Tensor",
     "description": "Dive into deep learning with TensorFlow and Keras to build neural networks for image recognition, natural language processing.",
     "price": 899,
     "reading_time": "12 weeks",
@@ -65,7 +65,7 @@
   {
     "id": 8, 
     "image": "https://i.ibb.co/cLpP4Zh/MYSQL-Database.jpg",
-    "title": "Data Analysis with R",
+    "title": "Data Analysis with JS",
     "description": "Explore data analysis and statistical modeling using the R programming language for various applications.",
     "price": 399,
     "reading_time": "8 weeks",

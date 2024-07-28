@@ -1,12 +1,17 @@
+import { useState } from 'react'
 import './App.css'
 import Bookmarks from './components/Bookmarks/Bookmarks'
 import Courses from './components/Courses/Courses'
 
 function App() {
 
+  const [bookmarks,setBookmarks] = useState([])
+
 
   const addHandleSelect = course => {
-    console.log("Click the button");
+    // console.log("Click the button",course);
+    const newAddBookmarks = [...bookmarks,course];
+    setBookmarks(newAddBookmarks);
   }
   return (
 
@@ -18,7 +23,7 @@ function App() {
         
         <Courses addHandleSelect={addHandleSelect}></Courses>
 
-      <Bookmarks></Bookmarks>
+      <Bookmarks bookmarks={bookmarks}></Bookmarks>
       
       </div>
     </>
